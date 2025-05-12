@@ -174,3 +174,5 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 
+/pract/migrations/0001_initial.py
+/pract/migrations/0002_profile.py
