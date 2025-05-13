@@ -186,4 +186,3 @@ onboard/__pycache__/*
 onboard/__pycache__/*
 venv
 obapp/migrations/*
-onboard/settings.py
