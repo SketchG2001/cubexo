@@ -1,0 +1,36 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Restaurant page</h1>
+    <!-- {%for rest in restaurants %}
+
+        <p>{{ rest.name }}</p>
+        <ul>
+            {% for rat in rest.ratings.all %}
+                <p>{{ rat.rating }}</p>
+            {% endfor %}
+
+        </ul>
+
+        <ul>
+            {% for sale in rest.sales.all %}
+                <p>{{ sale.income }}</p>
+            {% endfor %}
+
+        </ul>
+
+    {% endfor %} -->
+    
+    {% for rating in ratings %}
+        <p>{{rating.restaurant.name}} - {{rating}}</p>
+    {% endfor %}
+<img src="{% static 'img/sample.jpg' %}" alt="">
+</body>
+</html>
